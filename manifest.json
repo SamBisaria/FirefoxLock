@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Firefox Lock",
+  "description": "Allows you to set a password on your browser to prevent unauthorized access.",
+  "version": "1.0",
+  "icons": {
+    "48": "blacklock48.png"
+  },
+  "background": {
+    "scripts": ["bg.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications",
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "blacklock16.png",
+      "48": "blacklock48.png",
+      "128": "blacklock128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html"
+  }
+}
